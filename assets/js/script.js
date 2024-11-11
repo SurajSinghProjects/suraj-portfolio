@@ -18,7 +18,7 @@ let count = document.querySelectorAll(".count");
 let hasCount = false;
 window.onscroll = () => {
   let current = "";
-
+  let isActiveLinkFound = false;
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
@@ -28,9 +28,31 @@ window.onscroll = () => {
   });
 
   navLinks.forEach((link) => {
-    link.parentNode.classList.remove("active");
+    const parentLi = link.parentNode;
+    const buttonByClass = document.querySelector(".navbar-toggler");
+    const closestParent = parentLi.closest(".navbar-collapse");
+
+    if (parentLi) {
+      parentLi.classList.remove("active");
+    }
+
+    if (closestParent) {
+      closestParent.classList.remove("show");
+    }
+
     if (link.href.includes(current)) {
-      link.parentNode.classList.add("active");
+      parentLi.classList.add("active");
+      isActiveLinkFound = true;
+    }
+
+    if (isActiveLinkFound) {
+      const isExpanded = buttonByClass.getAttribute("aria-expanded") === "true";
+
+      if (isExpanded) {
+        buttonByClass.setAttribute("aria-expanded", String(!isExpanded));
+      } else {
+        buttonByClass.setAttribute("aria-expanded", String(isExpanded));
+      }
     }
   });
 

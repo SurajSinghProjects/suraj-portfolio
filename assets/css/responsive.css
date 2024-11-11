@@ -424,6 +424,10 @@
     height: auto;
   }
 
+  .service-section .service-main-box {
+    margin-bottom: 20px;
+  }
+
   .contact-section .col-md-6 .contact-box {
     height: auto !important;
   }
