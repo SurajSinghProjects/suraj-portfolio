@@ -47,7 +47,6 @@ window.onscroll = () => {
 
     if (isActiveLinkFound) {
       const isExpanded = buttonByClass.getAttribute("aria-expanded") === "true";
-
       if (isExpanded) {
         buttonByClass.setAttribute("aria-expanded", String(!isExpanded));
       } else {
@@ -76,10 +75,8 @@ window.onscroll = () => {
       updateCount();
     });
   }
-};
-
-// text animation
-let text = document.querySelector(".secondText");
+}; // text animation let
+text = document.querySelector(".secondText");
 let typedItems = ["Designer", "Developer", "Photographer"];
 let currentIndex = localStorage.getItem("currentIndex")
   ? parseInt(localStorage.getItem("currentIndex"))
@@ -132,44 +129,114 @@ document.getElementById("date").innerHTML = new Date().getFullYear();
 
 // // swiper js
 // const swiper = new Swiper(".swiper", {
-//   grabCursor: true,
-//   autoHeight: true,
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//       spaceBetween: 10,
-//     },
-//     640: {
-//       slidesPerView: 1,
-//       spaceBetween: 20,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//     1299: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//     },
-//   },
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
+// grabCursor: true,
+// autoHeight: true,
+// breakpoints: {
+// 0: {
+// slidesPerView: 1,
+// spaceBetween: 10,
+// },
+// 640: {
+// slidesPerView: 1,
+// spaceBetween: 20,
+// },
+// 768: {
+// slidesPerView: 2,
+// spaceBetween: 40,
+// },
+// 1024: {
+// slidesPerView: 3,
+// spaceBetween: 30,
+// },
+// 1299: {
+// slidesPerView: 3,
+// spaceBetween: 40,
+// },
+// },
+// // Navigation arrows
+// navigation: {
+// nextEl: ".swiper-button-next",
+// prevEl: ".swiper-button-prev",
+// },
 // });
 
 // form data
 let formData = document.querySelector("#formData");
+const modalElement = document.getElementById("staticBackdrop"); // Get the modal element
+const modalInstance = new bootstrap.Modal(modalElement); // Create a new instance of the modal
+let modalClose = document.querySelector(
+  ".contactModalForm .modal-footer button"
+);
+
 formData.addEventListener("submit", async (e) => {
   e.preventDefault();
   const getData = new FormData(formData);
   let data = Object.fromEntries(getData);
-  e.target.reset();
+  let isValid = true;
+  let firstNameError = document.getElementById("firstNameError");
+  let emailError = document.getElementById("emailError");
+  let subjectError = document.getElementById("subjectError");
+  let messageError = document.getElementById("messageError");
+
+  // after submit form remove error
+  [firstNameError, emailError, subjectError, messageError].forEach((error) => {
+    error.previousElementSibling.classList.remove("is-invalid");
+    error.classList.remove("invalid-feedback");
+    error.textContent = "";
+  });
+
+  // form validaiton
+  if (data.firstName.trim() === "") {
+    firstNameError.textContent = "A name is required.";
+    firstNameError.previousElementSibling.classList.add("is-invalid");
+    firstNameError.classList.add("invalid-feedback");
+    isValid = false;
+  }
+  if (data.email.trim() === "") {
+    emailError.textContent = "An email is required.";
+    emailError.previousElementSibling.classList.add("is-invalid");
+    emailError.classList.add("invalid-feedback");
+    isValid = false;
+  } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+    emailError.textContent = "Please enter the valid email.";
+    emailError.previousElementSibling.classList.add("is-invalid");
+    emailError.classList.add("invalid-feedback");
+    isValid = false;
+  }
+  if (data.subject.trim() === "") {
+    subjectError.textContent = "A subject is required.";
+    subjectError.previousElementSibling.classList.add("is-invalid");
+    subjectError.classList.add("invalid-feedback");
+    isValid = false;
+  }
+  if (data.message.trim() === "") {
+    messageError.textContent = "A message is required.";
+    messageError.previousElementSibling.classList.add("is-invalid");
+    messageError.classList.add("invalid-feedback");
+    isValid = false;
+  }
+
+  // form is validated submit the form
+  if (isValid) {
+    // Show the modal
+    modalInstance.show();
+    modalElement.classList.add("active");
+    // const whatsappMessage = `Name: ${data.firstName}\nEmail: ${data.email}\nSubject: ${data.subject}\nMessage: ${data.message}`;
+    // const whatsappNumber = "9131640486";
+    // const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+    //   whatsappMessage
+    // )}`;
+
+    // window.open(whatsappUrl, "_blank");
+    console.log(data, "data");
+    e.target.reset();
+  }
+});
+
+modalClose.addEventListener("click", function () {
+  if (modalElement.classList.contains("active")) {
+    modalElement.classList.remove("active");
+  }
 });
 
 let scrollTop = document.querySelector(".scroll-top");

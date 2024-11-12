@@ -432,6 +432,10 @@
     height: auto !important;
   }
 
+  .contact-section .contact-main-box {
+    padding: 10px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     padding: 20px;
