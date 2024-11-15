@@ -127,39 +127,6 @@ progressList.forEach((item) => {
 // for copyright date
 document.getElementById("date").innerHTML = new Date().getFullYear();
 
-// // swiper js
-// const swiper = new Swiper(".swiper", {
-// grabCursor: true,
-// autoHeight: true,
-// breakpoints: {
-// 0: {
-// slidesPerView: 1,
-// spaceBetween: 10,
-// },
-// 640: {
-// slidesPerView: 1,
-// spaceBetween: 20,
-// },
-// 768: {
-// slidesPerView: 2,
-// spaceBetween: 40,
-// },
-// 1024: {
-// slidesPerView: 3,
-// spaceBetween: 30,
-// },
-// 1299: {
-// slidesPerView: 3,
-// spaceBetween: 40,
-// },
-// },
-// // Navigation arrows
-// navigation: {
-// nextEl: ".swiper-button-next",
-// prevEl: ".swiper-button-prev",
-// },
-// });
-
 // form data
 let formData = document.querySelector("#formData");
 const modalElement = document.getElementById("staticBackdrop"); // Get the modal element

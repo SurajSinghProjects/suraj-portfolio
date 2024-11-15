@@ -1,451 +1,405 @@
-@media screen and (min-width: 992px) {
-  .collapse:not(.show) {
-    display: block !important;
-  }
+@media screen and (min-width:992px) {
+	.collapse:not(.show) {
+		display: block !important;
+	}
 
-  .header ~ main,
-  .header ~ footer {
-    margin-left: 300px;
-  }
+	.header ~ main, .header ~ footer {
+		margin-left: 300px;
+	}
+
 }
 
-@media screen and (max-width: 1599px) {
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 55px;
-  }
+@media screen and (max-width:1599px) {
 
-  h2,
-  .h2 {
-    font-size: 30px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 55px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 28px;
-  }
+	h2, .h2 {
+		font-size: 30px;
+	}
 
-  h4,
-  .h4 {
-    font-size: 26px;
-  }
+	h3, .h3 {
+		font-size: 28px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 24px;
-  }
+	h4, .h4 {
+		font-size: 26px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h5, .h5 {
+		font-size: 24px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  /* font css end */
-  .p-b-120 {
-    padding-bottom: 60px;
-  }
+	p, .p {
+		font-size: 16px;
+		font-weight: 400;
+	}
 
-  .p-t-120 {
-    padding-top: 60px;
-  }
+	/* font css end */
+	.p-b-120 {
+		padding-bottom: 60px;
+	}
+
+	.p-t-120 {
+		padding-top: 60px;
+	}
+
 }
 
-@media screen and (max-width: 1399px) {
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 50px;
-  }
+@media screen and (max-width:1399px) {
 
-  h2,
-  .h2 {
-    font-size: 30px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 50px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 28px;
-    line-height: 19px;
-  }
+	h2, .h2 {
+		font-size: 30px;
+	}
 
-  h4,
-  .h4 {
-    font-size: 26px;
-  }
+	h3, .h3 {
+		font-size: 28px;
+		line-height: 19px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 24px;
-  }
+	h4, .h4 {
+		font-size: 26px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h5, .h5 {
+		font-size: 24px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  /* font css end */
-  .query-img {
-    width: 140px;
-    height: 250px;
-  }
+	p, .p {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	/* font css end */
+	.query-img {
+		width: 140px;
+		height: 250px;
+	}
+
 }
 
-@media screen and (max-width: 1299px) {
-  /*   padding css start */
-  .p-t-120 {
-    padding-top: 50px;
-  }
+@media screen and (max-width:1299px) {
 
-  .p-b-120 {
-    padding-bottom: 50px;
-  }
+	/*   padding css start */
+	.p-t-120 {
+		padding-top: 50px;
+	}
 
-  .p-t-60 {
-    padding-top: 40px;
-  }
+	.p-b-120 {
+		padding-bottom: 50px;
+	}
 
-  .p-b-60 {
-    padding-bottom: 40px;
-  }
+	.p-t-60 {
+		padding-top: 40px;
+	}
 
-  /* padding css end */
+	.p-b-60 {
+		padding-bottom: 40px;
+	}
 
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 45px;
-  }
+	/* padding css end */
 
-  h2,
-  .h2 {
-    font-size: 28px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 45px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 26px;
-  }
+	h2, .h2 {
+		font-size: 28px;
+	}
 
-  h4,
-  .h4 {
-    font-size: 24px;
-  }
+	h3, .h3 {
+		font-size: 26px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 22px;
-  }
+	h4, .h4 {
+		font-size: 24px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h5, .h5 {
+		font-size: 22px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: 400;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  /* font css end */
+	p, .p {
+		font-size: 16px;
+		line-height: 150%;
+		font-weight: 400;
+	}
+
+	/* font css end */
 }
 
-@media screen and (max-width: 1199px) {
-  /* padding css start */
-  .p-t-120 {
-    padding-top: 60px;
-  }
+@media screen and (max-width:1199px) {
 
-  .p-b-120 {
-    padding-bottom: 60px;
-  }
+	/* padding css start */
+	.p-t-120 {
+		padding-top: 60px;
+	}
 
-  .p-t-60 {
-    padding-top: 40px;
-  }
+	.p-b-120 {
+		padding-bottom: 60px;
+	}
 
-  .p-b-60 {
-    padding-bottom: 40px;
-  }
+	.p-t-60 {
+		padding-top: 40px;
+	}
 
-  /* padding css end */
-  .btn {
-    padding: 10px 36px;
-  }
+	.p-b-60 {
+		padding-bottom: 40px;
+	}
 
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 40px;
-  }
+	/* padding css end */
+	.btn {
+		padding: 10px 36px;
+	}
 
-  h2,
-  .h2 {
-    font-size: 28px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 40px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 26px;
-  }
+	h2, .h2 {
+		font-size: 28px;
+	}
 
-  h4,
-  .h4 {
-    font-size: 24px;
-  }
+	h3, .h3 {
+		font-size: 26px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 22px;
-  }
+	h4, .h4 {
+		font-size: 24px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h5, .h5 {
+		font-size: 22px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: 400;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  /* font css end */
-  .about-section .about-counting .icon {
-    font-size: 30px;
-  }
+	p, .p {
+		font-size: 16px;
+		line-height: 150%;
+		font-weight: 400;
+	}
 
-  .about-section .about-counting h6 {
-    font-size: 38px;
-  }
+	/* font css end */
+	.about-section .about-counting .icon {
+		font-size: 30px;
+	}
+
+	.about-section .about-counting h6 {
+		font-size: 38px;
+	}
+
 }
 
-@media screen and (max-width: 991px) {
-  .navbar-toggler:focus {
-    box-shadow: none;
-  }
+@media screen and (max-width:991px) {
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
 
-  .navbar-toggler[aria-expanded="false"] .bi-x {
-    display: none;
-  }
+	.navbar-toggler[aria-expanded="false"] .bi-x {
+		display: none;
+	}
 
-  .navbar-toggler[aria-expanded="true"] .bi-list {
-    display: none;
-  }
+	.navbar-toggler[aria-expanded="true"] .bi-list {
+		display: none;
+	}
 
-  .header .btn {
-    padding: 10px 25px;
-  }
+	.header .btn {
+		padding: 10px 25px;
+	}
 
-  .btn {
-    padding: 10px 30px;
-  }
+	.btn {
+		padding: 10px 30px;
+	}
 
-  /* padding css start */
-  .p-t-120 {
-    padding-top: 50px;
-  }
+	/* padding css start */
+	.p-t-120 {
+		padding-top: 50px;
+	}
 
-  .p-b-120 {
-    padding-bottom: 50px;
-  }
+	.p-b-120 {
+		padding-bottom: 50px;
+	}
 
-  .p-t-60 {
-    padding-top: 30px;
-  }
+	.p-t-60 {
+		padding-top: 30px;
+	}
 
-  .p-b-60 {
-    padding-bottom: 30px;
-  }
+	.p-b-60 {
+		padding-bottom: 30px;
+	}
 
-  /* padding css end */
+	/* padding css end */
 
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 32px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 32px;
+	}
 
-  h2,
-  .h2 {
-    font-size: 28px;
-  }
+	h2, .h2 {
+		font-size: 28px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 26px;
-  }
+	h3, .h3 {
+		font-size: 26px;
+	}
 
-  h4,
-  .h4 {
-    font-size: 24px;
-  }
+	h4, .h4 {
+		font-size: 24px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 22px;
-    line-height: 28px;
-  }
+	h5, .h5 {
+		font-size: 22px;
+		line-height: 28px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+	p, .p {
+		font-size: 16px;
+		font-weight: 400;
+	}
 
-  /* font css end */
-  .hero-banner-img-box img {
-    height: 540px;
-  }
+	/* font css end */
+	.hero-banner-img-box img {
+		height: 540px;
+	}
 
-  .hero-banner-content .btn {
-    padding: 17px 32px;
-  }
+	.hero-banner-content .btn {
+		padding: 17px 32px;
+	}
 
-  .about-section .about-counting .icon {
-    font-size: 28px;
-  }
+	.about-section .about-counting .icon {
+		font-size: 28px;
+	}
 
-  .about-section .about-counting h6 {
-    font-size: 32px;
-  }
+	.about-section .about-counting h6 {
+		font-size: 32px;
+	}
+
 }
 
-@media screen and (max-width: 767px) {
-  .header .btn {
-    padding: 10px;
-  }
+@media screen and (max-width:767px) {
+	.header .btn {
+		padding: 10px;
+	}
 
-  .btn {
-    padding: 10px;
-    font-size: 14px;
-  }
+	.btn {
+		padding: 10px;
+		font-size: 14px;
+	}
 
-  /* padding css start */
-  .p-t-120 {
-    padding-top: 30px;
-  }
+	/* padding css start */
+	.p-t-120 {
+		padding-top: 30px;
+	}
 
-  .p-b-120 {
-    padding-bottom: 30px;
-  }
+	.p-b-120 {
+		padding-bottom: 30px;
+	}
 
-  .p-t-60 {
-    padding-top: 25px;
-  }
+	.p-t-60 {
+		padding-top: 25px;
+	}
 
-  .p-b-60 {
-    padding-bottom: 25px;
-  }
+	.p-b-60 {
+		padding-bottom: 25px;
+	}
 
-  /* padding css end */
+	/* padding css end */
 
-  /* font css start */
-  h1,
-  .h1 {
-    font-size: 30px;
-  }
+	/* font css start */
+	h1, .h1 {
+		font-size: 30px;
+	}
 
-  h2,
-  .h2 {
-    font-size: 28px;
-  }
+	h2, .h2 {
+		font-size: 28px;
+	}
 
-  h3,
-  .h3 {
-    font-size: 26px;
-    line-height: 50%;
-  }
+	h3, .h3 {
+		font-size: 26px;
+		line-height: 50%;
+	}
 
-  h4,
-  .h4 {
-    font-size: 24px;
-  }
+	h4, .h4 {
+		font-size: 24px;
+	}
 
-  h5,
-  .h5 {
-    font-size: 22px;
-    line-height: 20px;
-  }
+	h5, .h5 {
+		font-size: 22px;
+		line-height: 20px;
+	}
 
-  h6,
-  .h6 {
-    font-size: 18px;
-  }
+	h6, .h6 {
+		font-size: 18px;
+	}
 
-  p,
-  .p {
-    font-size: 16px;
-    font-weight: 400;
-  }
+	p, .p {
+		font-size: 16px;
+		font-weight: 400;
+	}
 
-  /* font css end */
-  .navbar-toggler {
-    padding: 4px;
-  }
+	/* font css end */
+	.navbar-toggler {
+		padding: 4px;
+	}
 
-  .hero-banner {
-    padding-top: 100px;
-  }
+	.hero-banner {
+		padding-top: 100px;
+	}
 
-  .hero-banner-content {
-    margin-bottom: 20px;
-  }
+	.hero-banner-content {
+		margin-bottom: 20px;
+	}
 
-  .hero-banner-content .btn {
-    padding: 12px 24px;
-  }
+	.hero-banner-content .btn {
+		padding: 12px 24px;
+	}
 
-  .hero-banner-content .inputMainBox {
-    height: 49px;
-  }
+	.hero-banner-content .inputMainBox {
+		height: 49px;
+	}
 
-  .hero-banner-img-box img {
-    height: auto;
-  }
+	.hero-banner-img-box img {
+		height: auto;
+	}
 
-  .service-section .service-main-box {
-    margin-bottom: 20px;
-  }
+	.service-section .service-main-box {
+		margin-bottom: 20px;
+	}
 
-  .contact-section .col-md-6 .contact-box {
-    height: auto !important;
-  }
+	.contact-section .col-md-6 .contact-box {
+		height: auto !important;
+	}
 
-  .contact-section .contact-main-box {
-    padding: 10px;
-  }
+	.contact-section .contact-main-box {
+		padding: 10px;
+	}
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    padding: 20px;
-    border-radius: 50%;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  .swiper {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
