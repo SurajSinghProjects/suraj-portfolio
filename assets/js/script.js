@@ -77,7 +77,7 @@ window.onscroll = () => {
   }
 }; // text animation let
 text = document.querySelector(".secondText");
-let typedItems = ["Designer", "Developer", "Photographer"];
+let typedItems = ["Web Designer", "UI Developer", "Frontend Developer"];
 let currentIndex = localStorage.getItem("currentIndex")
   ? parseInt(localStorage.getItem("currentIndex"))
   : 0;
